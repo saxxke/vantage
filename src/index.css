@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fdf8f8;
+    color: #1c1b1b;
+  }
+
+  h1, h2, h3, .font-serif, .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Inter', sans-serif;
+}
+
+.image-swap-container:hover .primary-image,
+.image-swap-container:active .primary-image {
+  opacity: 0;
+}
+
+.image-swap-container:hover .secondary-image,
+.image-swap-container:active .secondary-image {
+  opacity: 1;
+}
+
+/* Custom smooth scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1edec;
+}
+::-webkit-scrollbar-thumb {
+  background: #c4c7c7;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #747878;
+}
